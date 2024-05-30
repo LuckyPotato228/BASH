@@ -1,0 +1,7 @@
+!/bin/bash
+for i in $(seq 1 20); do
+  wget https://picsum.photos/800/400 -O attachments/image$i.jpg
+done
+echo "Загрузка фотографий завершена"
+rm attachments/*.jpg
+echo "Изображения удалены"
